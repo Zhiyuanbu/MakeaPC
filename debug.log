@@ -1,0 +1,21 @@
+PC Builder Debug Log
+==================
+
+This file tracks performance calculation issues and debugging information.
+
+Performance Calculation Flow:
+1. calculatePerformance() called
+2. calculateGamingPerformance() -> should return 0-100
+3. calculateProductivityPerformance() -> should return 0-100  
+4. DOM elements updated with calculated values
+
+Known Issues:
+- Performance bars show 0/100 despite correct calculations
+- DOM elements may not be updating properly
+- Need to verify element IDs match HTML
+
+Debug Steps:
+1. Check if performance calculation functions return correct values ✓
+2. Check if DOM elements exist and are accessible
+3. Verify CSS transitions aren't interfering
+4. Force DOM repaint after updates
